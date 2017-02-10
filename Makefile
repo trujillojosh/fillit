@@ -6,7 +6,7 @@
 #    By: jtrujill <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/12/17 16:06:44 by jtrujill          #+#    #+#              #
-#    Updated: 2017/02/09 23:45:08 by jtrujill         ###   ########.fr        #
+#    Updated: 2017/02/10 00:12:14 by jtrujill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,12 +24,15 @@ SRCS = fillit_main.c ft_block_check.c ft_char_check.c ft_connecting.c \
 all: $(NAME)
 
 $(NAME):
+	cd libft; make all
 	$(FLAGS) $(INC) -o $(NAME) $(SRCS) -L libft/ -lft
 
 clean:
+	cd libft; make clean
 	rm -rf
 
 fclean: clean
+	cd libft; make fclean
 	rm -rf $(NAME)
 
 re: fclean all
