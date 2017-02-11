@@ -6,7 +6,7 @@
 /*   By: jtrujill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 15:35:40 by jtrujill          #+#    #+#             */
-/*   Updated: 2017/02/10 22:59:27 by jtrujill         ###   ########.fr       */
+/*   Updated: 2017/02/10 23:03:22 by jtrujill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int		main(int argc, char **argv)
 
 	if (argc != 2)
 	{
-		ft_putstr("Usage: [./fillit] [tetrimino_file]\n");
+		ft_putstr("usage: ./fillit [tetrimino_file]\n");
 		return (1);
 	}
 	else
